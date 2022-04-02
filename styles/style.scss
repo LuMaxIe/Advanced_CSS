@@ -1,0 +1,113 @@
+@import './mixins';
+@import './headers';
+@import './mobile';
+@import './tablet';
+@import './desktop';
+
+$backGroundColor: #c3cfe2;
+$footerColor: #686de0;
+$textBackGround: #fff;
+$textColor: rgb(39, 37, 37);
+$cardFontSize: 0.65; //rem
+
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+  overflow: x;
+  background-color: $backGroundColor;
+  color: $textColor;
+}
+
+.grid-wrapper {
+  display: grid;
+  grid-auto-rows: minmax(min-content, max-content);
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: beige;
+  width: 100%;
+  text-align: center;
+}
+
+h5 {
+  text-align: center;
+  font-size: larger;
+}
+
+.card-container {
+  display: grid;
+  position: relative;
+  border-radius: 5%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  .top-text {
+    background-color: $textBackGround;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+  }
+  .profile-image {
+    border-radius: 50%;
+    z-index: 1;
+  }
+  .bottom-text {
+    background-color: $footerColor;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+  }
+  .card-overlay {
+    background: rgba(0,0,0,0.5);
+    opacity: 0;
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    transition:opacity 0.5s ease;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4%;
+    .read-more-button {
+      opacity: 0.7;
+    }
+  }
+}
+
+.card-container:hover .card-overlay {
+  opacity: 1;
+}
+
+.fa-blog {
+  background-color: #e17b77;
+  color: white;
+}
+
+.fa-facebook-f {
+  background-color: #3b5998;
+  color: white;
+}
+
+.fa-twitter {
+  color: white;
+  background-color: #00aced;
+}
+
+.fa-github {
+  color: white;
+  background-color: #333;
+}
+
+.fa-linkedin {
+  background-color: #007bb6;
+  color:white;
+}

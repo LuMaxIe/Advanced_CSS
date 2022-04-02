@@ -1,0 +1,164 @@
+@media screen and (min-width: 375px) {
+
+  $cardFontSize: 0.70rem;
+
+  .card-container {
+    grid-template-columns: [mainColumn] 300px;
+    grid-template-rows: [topRow] 200px [image] 50px [footer] 150px;
+    .top-text {
+      margin-top: 0;
+      margin-bottom: -50px;
+      font-size: $cardFontSize;
+      padding: 15px 20px 20px 30px;
+    }
+    .profile-image {
+      justify-self: center;
+      height: 115px;
+      margin: 0;
+      margin-top: -14px;
+      padding: 5px;
+      background-color: #fff;
+    }
+    .bottom-text {
+      text-align: center;
+      font-size: $cardFontSize * 1.2;
+      margin: 0;
+      padding: 50px;
+      color: rgb(255, 255, 255);
+      .bottom-text-site {
+        font-size: $cardFontSize;
+        color: rgba(255, 255, 255, 0.7);
+      }
+    }
+  }
+
+  .assignment-one-container {
+    margin: auto;
+  }
+
+  .assignment-two-container {
+    margin: auto;
+    .card-container {
+      margin-top: 15px;
+      margin-bottom: 15px; 
+    }
+  }
+
+  .social-icons {
+    justify-self: end;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    position: fixed;
+    bottom: 0;
+    align-items: flex-end;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+  }
+
+  .icon-container-blog {
+    width: 35px;
+    height: 35px;
+    background-color: #e17b77;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s;
+  }
+
+  .icon-container-blog:hover {
+    width: 120px;
+    justify-content: start;
+    padding-left: 5px;
+    .hidden-link-text {
+      display: block;
+      padding-left: 5px;
+    }
+  }
+
+  .icon-container-facebook {
+    width: 35px;
+    height: 35px;
+    background-color: #3b5998;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s;
+  }
+
+  .icon-container-facebook:hover {
+    width: 120px;
+    justify-content: start;
+    padding-left: 5px;
+    .hidden-link-text {
+      display: block;
+      padding-left: 5px;
+    }
+  }
+
+  .icon-container-twitter {
+    width: 35px;
+    height: 35px;
+    background-color: #00aced;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    transition: 0.2s;
+  }
+
+  .icon-container-twitter:hover {
+    width: 120px;
+    justify-content: start;
+    padding-left: 5px;
+    .hidden-link-text {
+      display: block;
+      padding-left: 5px;
+    }
+  }
+
+  .icon-container-github {
+    width: 35px;
+    height: 35px;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s;
+  }
+
+  .icon-container-github:hover {
+    width: 120px;
+    justify-content: start;
+    padding-left: 5px;
+    .hidden-link-text {
+      display: block;
+      padding-left: 5px;
+    }
+  }
+
+  .icon-container-linkedin {
+    width: 35px;
+    height: 35px;
+    background-color: #007bb6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s;
+  }
+
+  .icon-container-linkedin:hover {
+    width: 120px;
+    justify-content: start;
+    padding-left: 5px;
+    .hidden-link-text {
+      display: block;
+      padding-left: 5px;
+    }
+  }
+
+  .hidden-link-text {
+    display: none;
+    font-size: 8px;
+    color: white;
+  }
+}
